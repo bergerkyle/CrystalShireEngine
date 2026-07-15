@@ -178,7 +178,7 @@ LittlerootTown_MapEvents:
 
 	warp_event 10, 15, PLAYERS_HOUSE_2F, 2
 	warp_event 11, 15, PLAYERS_HOUSE_2F, 2
-	warp_event 04, 13, BIRCHS_LAB, 2
+	warp_event  4, 13, BIRCHS_LAB, 2
 
 	def_coord_events
 	coord_event  13,  07, -1, LittlerootTownConditionalWarpScript
@@ -190,7 +190,7 @@ LittlerootTown_MapEvents:
 	bg_event  08, 13, BGEVENT_READ, BirchLabSign
 
 	def_object_events
-	object_event  1,  4, SPRITE_TREECKO, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Littleroot_Treecko, -1
+	object_event  1,  6, SPRITE_TREECKO, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Littleroot_Treecko, -1
 	object_event 14,  4, SPRITE_TORCHIC, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Littleroot_Torchic, -1
 	object_event  1, 15, SPRITE_MUDKIP, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Littleroot_Mudkip, -1
 	object_event 10, 05, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LittlerootTownTeacherScript, -1

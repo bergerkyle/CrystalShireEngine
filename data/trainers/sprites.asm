@@ -87,5 +87,12 @@ BTTrainerClassSprites:
 	db SPRITE_COOLTRAINER_F ;ranger f
 	db SPRITE_GENTLEMAN ;explorer
 	db SPRITE_LASS		;psychic f
+	db SPRITE_KAREN		;agatha
+	db SPRITE_KAREN		;lorelei
+	db SPRITE_COOLTRAINER_M ; Fergus
+	db SPRITE_COOLTRAINER_F ; Neesha
+	db SPRITE_KIMONO_GIRL ; Lily
+	db SPRITE_GENTLEMAN ; Guy
+	db SPRITE_GENTLEMAN ; Giovanni placeholder
 
 	assert_table_length NUM_TRAINER_CLASSES ; 

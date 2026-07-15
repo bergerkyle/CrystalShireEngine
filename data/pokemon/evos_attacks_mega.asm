@@ -1,8 +1,8 @@
 SECTION "Evolutions and Attacks Mega", ROMX
 
 EvosAttacksPointersMega::
-	dw RaichuxEvosAttacks
-	dw RaichuyEvosAttacks
+	dw Bayleef2EvosAttacks
+	dw Meganium2EvosAttacks
 	dw DragonitexEvosAttacks
 	dw DragoniteyEvosAttacks
 	dw VenusaurxEvosAttacks
@@ -40,48 +40,56 @@ EvosAttacksPointersMega::
 	dw LedianxEvosAttacks
 	dw MagcargoxEvosAttacks
 	dw JynxxEvosAttacks
+	dw SceptilexEvosAttacks
+	dw BlazikenxEvosAttacks
+	dw SwampertxEvosAttacks
+	dw GardevoirxEvosAttacks
+	dw PidgeotxEvosAttacks
 .IndirectEnd::
 
-RaichuxEvosAttacks:
+Bayleef2EvosAttacks:
+	dbbw EVOLVE_LEVEL, 32, MEGANIUM2
+	dbww EVOLVE_ITEM, LEAF_STONE, BAYLEEF
 	db 0 ; no more evolutions
-	dbw 1, THUNDERSHOCK
-	dbw 1, GROWL
-	dbw 6, TAIL_WHIP
-	dbw 8, THUNDER_WAVE
-	dbw 12, QUICK_ATTACK
-	dbw 16, DOUBLE_TEAM
-	dbw 20, CHARM
-	dbw 24, SHOCK_WAVE
-	dbw 32, GROWTH
-	dbw 36, SWIFT
-	dbw 40, THUNDERBOLT
-	dbw 45, FAERIEGLEAM
-	dbw 50, MEDITATE	
-	dbw 55, LIGHT_SCREEN
-	dbw 60, THUNDER
-	dbw 65, RAIN_DANCE
-	dbw 70, VOLT_TACKLE
+	dbw 1, BUBBLE
+	dbw 5, ABSORB
+	dbw 8, GROWL
+	dbw 12, LEECH_SEED
+	dbw 16, VINE_WHIP
+	dbw 20, RAIN_DANCE
+	dbw 24, BUBBLEBEAM
+	dbw 28, RAZOR_LEAF
+	dbw 32, AURORA_BEAM
+	dbw 36, COSMIC_POWER
+	dbw 40, GIGA_DRAIN
+	dbw 45, MIST_BALL
+	dbw 50, RECOVER	
+	dbw 55, ICE_BEAM
+	dbw 60, HYDRO_PUMP
+	dbw 65, MIRROR_COAT
+	dbw 70, FRENZY_PLANT
 	db 0 ; no more level-up moves
 
-RaichuyEvosAttacks:
+Meganium2EvosAttacks:
+	dbww EVOLVE_ITEM, LEAF_STONE, MEGANIUM
 	db 0 ; no more evolutions
-	dbw 1, THUNDERSHOCK
-	dbw 1, GROWL
-	dbw 6, TAIL_WHIP
-	dbw 8, THUNDER_WAVE
-	dbw 12, QUICK_ATTACK
-	dbw 16, DOUBLE_TEAM
-	dbw 20, CHARM
-	dbw 24, SHOCK_WAVE
-	dbw 32, GROWTH
-	dbw 36, SWIFT
-	dbw 40, THUNDERBOLT
-	dbw 45, FAERIEGLEAM
-	dbw 50, MEDITATE	
-	dbw 55, LIGHT_SCREEN
-	dbw 60, THUNDER
-	dbw 65, RAIN_DANCE
-	dbw 70, VOLT_TACKLE
+	dbw 1, BUBBLE
+	dbw 5, ABSORB
+	dbw 8, GROWL
+	dbw 12, LEECH_SEED
+	dbw 16, VINE_WHIP
+	dbw 20, RAIN_DANCE
+	dbw 24, BUBBLEBEAM
+	dbw 28, RAZOR_LEAF
+	dbw 32, AURORA_BEAM
+	dbw 36, COSMIC_POWER
+	dbw 40, GIGA_DRAIN
+	dbw 45, MIST_BALL
+	dbw 50, RECOVER	
+	dbw 55, ICE_BEAM
+	dbw 60, HYDRO_PUMP
+	dbw 65, MIRROR_COAT
+	dbw 70, FRENZY_PLANT
 	db 0 ; no more level-up moves
 
 DragonitexEvosAttacks:
@@ -843,6 +851,110 @@ JynxxEvosAttacks:
 	dbw 60, BLIZZARD
 	dbw 55, FUTURE_SIGHT
 	dbw 70, MEDITATE
+	db 0 ; no more level-up moves
+
+SceptilexEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, LEER
+	dbw 1, POUND
+	dbw 6, ABSORB
+	dbw 12, QUICK_ATTACK
+	dbw 16, SCREECH
+	dbw 20, LEECH_SEED
+	dbw 24, RAZOR_LEAF
+	dbw 28, FAINT_ATTACK
+	dbw 32, FURY_CUTTER
+	dbw 36, LEAF_BLADE
+	dbw 40, GIGA_DRAIN	
+	dbw 45, DRAGONBREATH
+	dbw 50, PURSUIT
+	dbw 55, DRAGON_DANCE
+	dbw 60, FRENZY_PLANT
+	dbw 65, SOLARBEAM
+	dbw 70, SUNNY_DAY
+	db 0 ; no more level-up moves
+
+BlazikenxEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, GROWL
+	dbw 1, SCRATCH
+	dbw 7, EMBER
+	dbw 12, PECK
+	dbw 16, LOW_KICK
+	dbw 20, MACH_PUNCH
+	dbw 24, FIRE_SPIN	
+	dbw 28, MIRROR_MOVE
+	dbw 32, DOUBLE_KICK
+	dbw 36, BULK_UP
+	dbw 40, BLAZE_KICK
+	dbw 45, CROSS_CHOP
+	dbw 50, DRILL_PECK	
+	dbw 55, MIMIC
+	dbw 60, MEGA_KICK
+	dbw 65, HI_JUMP_KICK
+	dbw 70, BLAST_BURN
+	db 0 ; no more level-up moves
+
+SwampertxEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, GROWL
+	dbw 1, TACKLE
+	dbw 6, SAND_ATTACK
+	dbw 10, CLAMP
+	dbw 14, BIDE
+	dbw 20, SLAM
+	dbw 24, MUD_SHOT
+	dbw 28, WATER_PULSE	
+	dbw 32, WHIRLPOOL
+	dbw 36, RAIN_DANCE
+	dbw 40, MUDDY_WATER	
+	dbw 45, EARTHQUAKE
+	dbw 50, BULK_UP
+	dbw 55, WATERFALL
+	dbw 60, HYDRO_PUMP
+	dbw 65, OUTRAGE
+	dbw 70, HYDRO_CANNON
+	db 0 ; no more level-up moves
+
+GardevoirxEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, PIXIE_DUST
+	dbw 6, CONFUSION
+	dbw 12, CHARM
+	dbw 16, TELEPORT
+	dbw 20, CONFUSE_RAY
+	dbw 24, DRAININGKISS
+	dbw 28, PSYBEAM
+	dbw 32, HYPNOSIS
+	dbw 36, CALM_MIND
+	dbw 40, PSYCHIC_M
+	dbw 45, DREAM_EATER
+	dbw 50, MOONBLAST
+	dbw 55, RECOVER	
+	dbw 60, SUBSTITUTE
+	dbw 65, LUSTER_PURGE
+	dbw 70, FUTURE_SIGHT
+	db 0 ; no more level-up moves
+
+PidgeotxEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, TACKLE
+	dbw 1, SAND_ATTACK
+	dbw 8, GUST
+	dbw 12, QUICK_ATTACK
+	dbw 16, WHIRLWIND
+	dbw 24, AERIAL_ACE
+	dbw 28, SLAM
+	dbw 30, STEEL_WING
+	dbw 36, MIRROR_MOVE
+	dbw 40, RAZOR_WIND
+	dbw 45, EXTREMESPEED
+	dbw 50, BULK_UP
+	dbw 55, DRAGONBREATH
+	dbw 60, HURRICANE
+	dbw 65, HYPER_VOICE
+	dbw 70, SKY_ATTACK
+	dbw 80, AEROBLAST
 	db 0 ; no more level-up moves
 
 ENDSECTION

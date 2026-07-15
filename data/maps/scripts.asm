@@ -490,12 +490,6 @@ INCLUDE "maps/hoenn/oldale/OldalePokecenter.asm"
 INCLUDE "maps/hoenn/oldale/OldaleMart.asm"
 INCLUDE "maps/hoenn/oldale/OldaleHouse1.asm"
 INCLUDE "maps/hoenn/oldale/OldaleHouse2.asm"
-INCLUDE "maps/hoenn/petalburg/PetalburgCity.asm"
-INCLUDE "maps/hoenn/petalburg/PetalburgGym.asm"
-INCLUDE "maps/hoenn/petalburg/PetalburgPokecenter.asm"
-INCLUDE "maps/hoenn/petalburg/PetalburgMart.asm"
-INCLUDE "maps/hoenn/petalburg/PetalburgHouse1.asm"
-INCLUDE "maps/hoenn/petalburg/PetalburgHouse2.asm"
 INCLUDE "maps/hoenn/rustboro/RustboroCity.asm"
 INCLUDE "maps/hoenn/rustboro/RustboroGym.asm"
 INCLUDE "maps/hoenn/rustboro/RustboroPokecenter.asm"
@@ -536,6 +530,10 @@ INCLUDE "maps/hoenn/mossdeep/MossdeepMart.asm"
 INCLUDE "maps/hoenn/mossdeep/MossdeepGym.asm"
 
 INCLUDE "maps/hoenn/evergrande/EvergrandeCity.asm"
+INCLUDE "maps/hoenn/evergrande/EvergrandeDungeon.asm"
+INCLUDE "maps/hoenn/evergrande/EvergrandeDungeonB1F.asm"
+INCLUDE "maps/hoenn/evergrande/EvergrandeDungeonB2F.asm"
+
 INCLUDE "maps/hoenn/evergrande/EvergrandePokecenter.asm"
 INCLUDE "maps/hoenn/evergrande/HoennPokeleague.asm"
 
@@ -559,6 +557,18 @@ INCLUDE "maps/hoenn/sootopolis/SootopolisFisherHouse.asm"
 ENDSECTION
 
 
+SECTION "Map Scripts 25.4", ROMX
+
+INCLUDE "maps/hoenn/petalburg/PetalburgCity.asm"
+INCLUDE "maps/hoenn/petalburg/PetalburgGym.asm"
+INCLUDE "maps/hoenn/petalburg/PetalburgPokecenter.asm"
+INCLUDE "maps/hoenn/petalburg/PetalburgMart.asm"
+INCLUDE "maps/hoenn/petalburg/PetalburgHouse1.asm"
+INCLUDE "maps/hoenn/petalburg/PetalburgHouse2.asm"
+
+ENDSECTION
+
+
 SECTION "Map Scripts 26", ROMX
 
 INCLUDE "maps/hoenn/rustboro/RustboroCutterHouse.asm"
@@ -570,11 +580,6 @@ INCLUDE "maps/hoenn/slateport/SlateportTradeHouse.asm"
 INCLUDE "maps/hoenn/fortree/FortreeTradeHouse.asm"
 INCLUDE "maps/hoenn/lilycove/LilycoveTradeHouse.asm"
 INCLUDE "maps/hoenn/lilycove/LilycovePaintHouse.asm"
-
-INCLUDE "maps/hoenn/lavaridge/LavaridgeTown.asm"
-INCLUDE "maps/hoenn/lavaridge/LavaridgePokecenter.asm"
-INCLUDE "maps/hoenn/lavaridge/LavaridgeMart.asm"
-INCLUDE "maps/hoenn/lavaridge/LavaridgeGym.asm"
 
 ENDSECTION
 
@@ -588,6 +593,16 @@ INCLUDE "maps/hoenn/GraniteCaveB3F.asm"
 INCLUDE "maps/hoenn/RegiceLair.asm"
 INCLUDE "maps/hoenn/RegirockLair.asm"
 INCLUDE "maps/hoenn/RegisteelLair.asm"
+
+ENDSECTION
+
+
+SECTION "Map Scripts 26.2", ROMX
+
+INCLUDE "maps/hoenn/lavaridge/LavaridgeTown.asm"
+INCLUDE "maps/hoenn/lavaridge/LavaridgePokecenter.asm"
+INCLUDE "maps/hoenn/lavaridge/LavaridgeMart.asm"
+INCLUDE "maps/hoenn/lavaridge/LavaridgeGym.asm"
 
 ENDSECTION
 
@@ -690,6 +705,12 @@ INCLUDE "maps/hoenn/Route120.asm"
 INCLUDE "maps/hoenn/Route121.asm"
 INCLUDE "maps/hoenn/Route122.asm"
 INCLUDE "maps/hoenn/Route123.asm"
+
+ENDSECTION
+
+
+SECTION "Map Scripts 31", ROMX
+
 INCLUDE "maps/hoenn/MtPyre.asm"
 
 ENDSECTION
@@ -700,14 +721,43 @@ SECTION "Map Scripts Battle Resort", ROMX
 INCLUDE "maps/hoenn/battle/BattleResort.asm"
 INCLUDE "maps/hoenn/battle/BattleResortPokecenter.asm"
 INCLUDE "maps/hoenn/battle/BattleResortMart.asm"
+INCLUDE "maps/hoenn/battle/FancyRocks.asm"
 INCLUDE "maps/hoenn/battle/TreetopTrial.asm"
 INCLUDE "maps/hoenn/battle/AshenGauntlet.asm"
 INCLUDE "maps/hoenn/battle/WorldCupLobby.asm"
 INCLUDE "maps/hoenn/battle/BattleResortHarbor.asm"
 INCLUDE "maps/hoenn/lilycove/LilycoveHarbor.asm"
 
+ENDSECTION
+
+
+SECTION "Map Scripts World Cup Qualifiers", ROMX
+
 INCLUDE "maps/hoenn/battle/WCQualifier1.asm"
 INCLUDE "maps/hoenn/battle/WCQualifier2.asm"
 INCLUDE "maps/hoenn/battle/WCQualifier3.asm"
+
+INCLUDE "maps/hoenn/Route119FisherHouse.asm"
+
+ENDSECTION
+
+
+SECTION "Map Scripts Mauville Game Corner", ROMX
+
+INCLUDE "maps/hoenn/mauville/NewMauvilleBasement.asm"
+INCLUDE "maps/hoenn/mauville/MauvilleGameCorner.asm"
+
+ENDSECTION
+
+
+SECTION "Map Scripts World Cup Challenger", ROMX
+
+INCLUDE "maps/hoenn/battle/WCChallengerLobby.asm"
+INCLUDE "maps/hoenn/battle/WCRoundOne.asm"
+INCLUDE "maps/hoenn/battle/WCRoundTwo.asm"
+INCLUDE "maps/hoenn/battle/WCRoundThree.asm"
+INCLUDE "maps/hoenn/battle/WCRoundFour.asm"
+INCLUDE "maps/hoenn/battle/WCFinals.asm"
+
 
 ENDSECTION

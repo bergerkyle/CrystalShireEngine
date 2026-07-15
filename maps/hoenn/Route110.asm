@@ -243,6 +243,12 @@ Route110CyclingRoadSignText:
 	line "(Closed)"
 	done
 
+Route110RareCandy:
+	itemball RARE_CANDY
+
+Route110Lemonade:
+	itemball LEMONADE
+
 Route110_MapEvents:
 	db 0, 0 ; filler
 
@@ -252,11 +258,11 @@ Route110_MapEvents:
 	def_coord_events
 
 	def_bg_events
-	bg_event  05, 43, BGEVENT_READ, Route110Sign
-	bg_event  17, 07, BGEVENT_READ, Route110Sign
+	bg_event  5, 42, BGEVENT_READ, Route110Sign
+	bg_event 17,  6, BGEVENT_READ, Route110Sign
 	bg_event  32, 16, BGEVENT_READ, Route110NewMauvilleSign
-	bg_event  21, 51, BGEVENT_READ, Route110CyclingRoadSign
-	bg_event  17, 15, BGEVENT_READ, Route110CyclingRoadSign
+	bg_event 21, 50, BGEVENT_READ, Route110CyclingRoadSign
+	bg_event 17, 14, BGEVENT_READ, Route110CyclingRoadSign
 
 	def_object_events
 	object_event 02, 47, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_TRAINER, 3, Route110IsabelScript, -1
@@ -268,3 +274,5 @@ Route110_MapEvents:
 	object_event 27, 23, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, Route110DaleScript, -1
 	object_event 06, 08, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route110FruitTree1, -1
 	object_event 07, 08, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route110FruitTree2, -1
+	object_event 06, 36, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route110RareCandy, EVENT_ROUTE_110_RARE_CANDY
+	object_event 30, 30, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route110Lemonade, EVENT_ROUTE_110_LEMONADE

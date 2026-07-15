@@ -480,7 +480,7 @@ IconPointers:
 	dw AkuaIcon
 	dw AkueriaIcon
 	dw HaneeiIcon
-	dw TsubomittIcon
+	dw HanamoleIcon ;chikorita2
 	dw KotoraIcon
 	dw RaitoraIcon
 	dw AshibombIcon
@@ -528,4 +528,9 @@ IconPointers:
 	dw LedianxIcon
 	dw MagcargoxIcon
 	dw JynxxIcon
+	dw SceptilexIcon
+	dw BlazikenxIcon
+	dw SwampertxIcon
+	dw GardevoirxIcon
+	dw PidgeotxIcon
 	assert_table_length NUM_POKEMON + 1

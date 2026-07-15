@@ -65,6 +65,7 @@ IntimidateMons::
 	dw CYNDAQUIL2
 	dw QUILAVA2
 	dw TYPHLOSION2	
+	dw GOROCHU
 	dw -1
 
 MystifyMons::
@@ -78,8 +79,7 @@ MystifyMons::
 	dw DRAGONITEX
 	dw DRAGONITEY
 	dw HOOTHOOT
-	dw NOCTOWL
-	dw SLOWKING
+	dw NOCTOWL	
 	dw MISDREAVUS
 	dw MISMAGIUS
 	dw UNOWN
@@ -89,6 +89,9 @@ MystifyMons::
 	dw MILOTIC
 	dw HGROWLITHE
 	dw HARCANINE
+	dw ABRA2
+	dw KADABRA2
+	dw ALAKAZAM2
 	dw NOCTOWL2	
 	dw UNOWNX
 	dw -1
@@ -98,7 +101,6 @@ SnareMons::
 	dw WEEPINBELL
 	dw VICTREEBEL
 	dw VICTREEBELX
-	dw TSUBOMITT
 	dw TENTACOOL
 	dw TENTACRUEL
 	dw TANGELA
@@ -134,6 +136,7 @@ HasteMons::
 	dw TORCHIC
 	dw COMBUSKEN
 	dw BLAZIKEN
+	dw BLAZIKENX
 	dw NINJASK
 	dw SUNBOU
 	dw IKARI
@@ -145,6 +148,7 @@ AimMons::
 	dw PIDGEY
 	dw PIDGEOTTO
 	dw PIDGEOT
+	dw PIDGEOTX
 	dw MAGNEMITE
 	dw MAGNETON
 	dw MAGNEZONE
@@ -162,9 +166,7 @@ AimMons::
 FocusMons::	
 	dw MACHOP
 	dw MACHOKE
-	dw MACHAMP
-	dw NATU
-	dw XATU
+	dw MACHAMP	
 	dw MURKROW
 	dw HONCHKROW
 	dw TAILLOW
@@ -179,6 +181,7 @@ VeiledMons::
 	dw RALTS
 	dw KIRLIA
 	dw GARDEVOIR
+	dw GARDEVOIRX
 	dw HANAMOLE
 	dw HANEEI
 	dw GPONYTA
@@ -212,10 +215,14 @@ LeechMons::
 	dw -1
 
 EnervateMons::
+	dw DROWZEE
+	dw HYPNO
+	dw PSYDUCK
+	dw GOLDUCK
+	dw NATU
+	dw XATU
+	dw SLOWKING
 	dw GOREBYSS
-	dw ABRA2
-	dw KADABRA2
-	dw ALAKAZAM2
 	dw -1
 
 DauntMons::
@@ -224,6 +231,9 @@ DauntMons::
 	dw NIDORAN_M
 	dw NIDORINO
 	dw NIDOKING
+	dw ZUBAT
+	dw GOLBAT
+	dw CROBAT
 	dw TAUROS
 	dw GROWLITHE
 	dw ARCANINE	
@@ -310,6 +320,8 @@ ElementalFangMons::
 	dw LINOONE
 	dw CARVANHA
 	dw SHARPEDO
+	dw SEVIPER
+	dw ZANGOOSE
 	dw EXEGGUTOR2
 	dw FURRET2	
 	dw KOTORA
@@ -439,6 +451,9 @@ RainDishMons::
 	dw TOTODILE2 
 	dw CROCONAW2 
 	dw FERALIGATR2
+	dw CHIKORITA2
+	dw BAYLEEF2
+	dw MEGANIUM2
 	dw -1
 
 SunbaskMons::
@@ -450,9 +465,11 @@ SunbaskMons::
 	dw CHARMELEON 
 	dw CHARIZARD
 	dw CHARIZARDX
+	dw CHARIZARDY
 	dw TREECKO
 	dw GROVYLE
 	dw SCEPTILE
+	dw SCEPTILEX
 	dw TROPIUS
 	dw TROPIUSX	
 	dw -1
@@ -512,6 +529,7 @@ SwiftSwimMons::
 	dw MUDKIP
 	dw MARSHTOMP
 	dw SWAMPERT
+	dw SWAMPERTX
 	dw SURSKIT	
 	dw RELICANTH
 	dw VULPIX2

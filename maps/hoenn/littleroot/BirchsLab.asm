@@ -11,44 +11,11 @@ BirchsLab_MapScripts:
 
 ProfBirchScript:
 	faceplayer
-	opentext
-	checkevent EVENT_GOT_HOENNITE_FROM_BIRCH
-	iftrue BirchNormalScript
-
-	sjump BirchGiveHoenniteScript
-
-	closetext
-	end
-
-BirchGiveHoenniteScript:
-	writetext BirchGiveHoenniteText
-	promptbutton
-	verbosegiveitem HOENNITE_X
-	writetext BirchExplainsHoenniteText
-	waitbutton
-	setevent EVENT_GOT_HOENNITE_FROM_BIRCH
-	closetext
-	end	
-
-BirchNormalScript:
+	opentext 
 	writetext BirchNormalText
 	waitbutton
 	closetext
 	end
-
-BirchGiveHoenniteText:
-	text "Hey <PLAY_G>."
-
-	para "Prof. Elm said"
-	line "you might have a"
-	cont "use for this."
-	done
-
-BirchExplainsHoenniteText:
-	text "Certain #mon"
-	line "from Hoenn could"
-	cont "use this."
-	done
 
 BirchNormalText:
 	text "Hey <PLAY_G>."
@@ -78,7 +45,7 @@ BirchLeftPokeBallScript:
 	iftrue BirchAvulpixPokeBallScript
 
 	checkevent EVENT_ORIGIN_REDDIT
-	iftrue BirchAbra2PokeBallScript
+	iftrue BirchCyndaquil2PokeBallScript
 
 	checkevent EVENT_ORIGIN_BETA
 	iftrue BirchHonobeaPokeBallScript
@@ -103,7 +70,7 @@ BirchMiddlePokeBallScript:
 	iftrue BirchAsandshrewPokeBallScript
 
 	checkevent EVENT_ORIGIN_REDDIT
-	iftrue BirchVoltorb2PokeBallScript
+	iftrue BirchTotodile2PokeBallScript
 
 	checkevent EVENT_ORIGIN_BETA
 	iftrue BirchKurusuPokeBallScript
@@ -128,7 +95,7 @@ BirchRightPokeBallScript:
 	iftrue BirchAgrimerPokeBallScript
 
 	checkevent EVENT_ORIGIN_REDDIT
-	iftrue BirchExeggcutePokeBallScript
+	iftrue BirchChikorita2PokeBallScript
 
 	checkevent EVENT_ORIGIN_BETA
 	iftrue BirchKotoraPokeBallScript
@@ -226,13 +193,13 @@ BirchAvulpixPokeBallScript:
 	closetext
 	sjump BirchDirectionsScript
 
-BirchAbra2PokeBallScript:	
-	pokepic ABRA2
-	cry ABRA2
+BirchCyndaquil2PokeBallScript:	
+	pokepic CYNDAQUIL2
+	cry CYNDAQUIL2
 	waitbutton
 	closepokepic
 	opentext
-	writetext BirchTakeAbra2Text
+	writetext BirchTakeCyndaquilText
 	yesorno
 	iffalse BirchDidntChooseStarterScript
 	disappear BIRCHSLAB_POKE_BALL1
@@ -240,35 +207,12 @@ BirchAbra2PokeBallScript:
 	writetext BirchChoseStarterText
 	promptbutton
 	waitsfx
-	getmonname STRING_BUFFER_3, ABRA2
+	getmonname STRING_BUFFER_3, CYNDAQUIL2
 	writetext BirchReceivedStarterText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke ABRA2, 5, BERRY
-	closetext
-	sjump BirchDirectionsScript
-
-BirchVulpix2PokeBallScript:	
-	pokepic VULPIX2
-	cry VULPIX2
-	waitbutton
-	closepokepic
-	opentext
-	writetext BirchTakeVulpix2Text
-	yesorno
-	iffalse BirchDidntChooseStarterScript
-	disappear BIRCHSLAB_POKE_BALL1
-	setevent EVENT_GOT_CYNDAQUIL_FROM_ELM
-	writetext BirchChoseStarterText
-	promptbutton
-	waitsfx
-	getmonname STRING_BUFFER_3, VULPIX2
-	writetext BirchReceivedStarterText
-	playsound SFX_CAUGHT_MON
-	waitsfx
-	promptbutton
-	givepoke VULPIX2, 5, BERRY
+	givepoke CYNDAQUIL2, 5, BERRY
 	closetext
 	sjump BirchDirectionsScript
 
@@ -387,13 +331,13 @@ BirchAsandshrewPokeBallScript:
 	closetext
 	sjump BirchDirectionsScript
 
-BirchVoltorb2PokeBallScript:	
-	pokepic VOLTORB2
-	cry VOLTORB2
+BirchTotodile2PokeBallScript:	
+	pokepic TOTODILE2
+	cry TOTODILE2
 	waitbutton
 	closepokepic
 	opentext
-	writetext BirchTakeVoltorbText
+	writetext BirchTakeTotodileText
 	yesorno
 	iffalse BirchDidntChooseStarterScript
 	disappear BIRCHSLAB_POKE_BALL2
@@ -401,12 +345,12 @@ BirchVoltorb2PokeBallScript:
 	writetext BirchChoseStarterText
 	promptbutton
 	waitsfx
-	getmonname STRING_BUFFER_3, VOLTORB2
+	getmonname STRING_BUFFER_3, TOTODILE2
 	writetext BirchReceivedStarterText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke VOLTORB2, 5, BERRY
+	givepoke TOTODILE2, 5, BERRY
 	closetext
 	sjump BirchDirectionsScript
 
@@ -525,13 +469,13 @@ BirchAgrimerPokeBallScript:
 	closetext
 	sjump BirchDirectionsScript
 
-BirchExeggcutePokeBallScript:	
-	pokepic EXEGGCUTE2
-	cry EXEGGCUTE2
+BirchChikorita2PokeBallScript:	
+	pokepic CHIKORITA2
+	cry CHIKORITA2
 	waitbutton
 	closepokepic
 	opentext
-	writetext BirchTakeExeggcuteText
+	writetext BirchTakeChikoritaText
 	yesorno
 	iffalse BirchDidntChooseStarterScript
 	disappear BIRCHSLAB_POKE_BALL3
@@ -539,12 +483,12 @@ BirchExeggcutePokeBallScript:
 	writetext BirchChoseStarterText
 	promptbutton
 	waitsfx
-	getmonname STRING_BUFFER_3, EXEGGCUTE2
+	getmonname STRING_BUFFER_3, CHIKORITA2
 	writetext BirchReceivedStarterText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke EXEGGCUTE2, 5, BERRY
+	givepoke CHIKORITA2, 5, BERRY
 	closetext
 	sjump BirchDirectionsScript
 
@@ -654,18 +598,6 @@ BirchTakeAvulpixText:
 	cont "snow #mon?"
 	done
 
-BirchTakeVulpix2Text:
-	text "Birch: Take"
-	line "Vulpix, the"
-	cont "steam #mon?"
-	done
-
-BirchTakeAbra2Text:
-	text "Birch: Take"
-	line "Abra, the"
-	cont "magician #mon?"
-	done
-
 BirchTakeHonobeaText:
 	text "Birch: Take"
 	line "Honobea, the"
@@ -696,12 +628,6 @@ BirchTakeAsandshrewText:
 	cont "mouse #mon?"
 	done
 
-BirchTakeVoltorbText:
-	text "Birch: Take"
-	line "Voltorb, the"
-	cont "orb #mon?"
-	done
-
 BirchTakeKotoraText:
 	text "Birch: Take"
 	line "Kotora, the"
@@ -730,12 +656,6 @@ BirchTakeAgrimerText:
 	text "Birch: Take"
 	line "Grimer, the"
 	cont "poison #mon?"
-	done
-
-BirchTakeExeggcuteText:	
-	text "Birch: Take"
-	line "Exeggcute, the"
-	cont "grass #mon?"
 	done
 
 BirchTakeKurusuText:	

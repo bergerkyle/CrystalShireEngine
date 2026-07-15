@@ -829,6 +829,10 @@ ENDM
 	map_attributes SootopolisFisherHouse, SOOTOPOLIS_FISHER_HOUSE, $00, 0
 
 	map_attributes EvergrandeCity, EVERGRANDE_CITY, $05, 0
+	map_attributes EvergrandeDungeon, EVERGRANDE_DUNGEON, $09, 0
+	map_attributes EvergrandeDungeonB1F, EVERGRANDE_DUNGEON_B1F, $09, 0
+	map_attributes EvergrandeDungeonB2F, EVERGRANDE_DUNGEON_B2F, $09, 0
+
 
 	map_attributes Route101, ROUTE_101, $05, NORTH | SOUTH
 	connection north, OldaleTown, OLDALE_TOWN, 0
@@ -911,6 +915,8 @@ ENDM
 	connection east, Route123, ROUTE_123, 0
 
 	map_attributes NewMauville, NEW_MAUVILLE, $00, 0
+	map_attributes NewMauvilleBasement, NEW_MAUVILLE_BASEMENT, $00, 0
+	map_attributes MauvilleGameCorner, MAUVILLE_GAME_CORNER, $00, 0
 
 	map_attributes Route119South, ROUTE_119_SOUTH, $05, NORTH | SOUTH
 	connection north, Route119North, ROUTE_119_NORTH, 0
@@ -919,6 +925,8 @@ ENDM
 	map_attributes Route119North, ROUTE_119_NORTH, $05,  SOUTH | EAST
 	connection south, Route119South, ROUTE_119_SOUTH, 0
 	connection east, FortreeCity, FORTREE_CITY, 0
+
+	map_attributes Route119FisherHouse, ROUTE_119_FISHER_HOUSE, $00, 0
 
 	map_attributes Route120, ROUTE_120, $05, WEST | EAST
 	connection west, FortreeCity, FORTREE_CITY, 0
@@ -949,6 +957,8 @@ ENDM
 	map_attributes BattleResort, BATTLE_RESORT, $00, 0
 	map_attributes BattleResortPokecenter, BATTLE_RESORT_POKECENTER, $00, 0
 	map_attributes BattleResortMart, BATTLE_RESORT_MART, $00, 0
+	map_attributes FancyRocks, FANCY_ROCKS, $00, 0
+
 	map_attributes TreetopTrial, TREETOP_TRIAL, $00, 0
 	map_attributes AshenGauntlet, ASHEN_GAUNTLET, $00, 0
 	map_attributes WorldCupLobby, WORLD_CUP_LOBBY, $00, 0
@@ -957,3 +967,11 @@ ENDM
 	map_attributes WCQualifier1, WC_QUALIFIER_1, $00, 0
 	map_attributes WCQualifier2, WC_QUALIFIER_2, $00, 0
 	map_attributes WCQualifier3, WC_QUALIFIER_3, $00, 0
+
+	map_attributes WCChallengerLobby, WC_CHALLENGER_LOBBY, $00, 0
+
+	map_attributes WCRoundOne, WC_ROUND_ONE, $00, 0
+	map_attributes WCRoundTwo, WC_ROUND_TWO, $00, 0
+	map_attributes WCRoundThree, WC_ROUND_THREE, $00, 0
+	map_attributes WCRoundFour, WC_ROUND_FOUR, $00, 0
+	map_attributes WCFinals, WC_FINALS, $00, 0

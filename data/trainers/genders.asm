@@ -89,4 +89,11 @@ BTTrainerClassGenders:
 	db FEMALE ; Ranger F
 	db MALE   ; Explorer
 	db FEMALE ; Psychic F
+	db FEMALE ; Agatha
+	db FEMALE ; Lorlei
+	db MALE   ; Fergus
+	db FEMALE ; Neesha
+	db FEMALE ; Lily
+	db MALE   ; Guy
+	db MALE   ; Giovanni
 	assert_table_length NUM_TRAINER_CLASSES ; 

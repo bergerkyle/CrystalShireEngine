@@ -594,7 +594,10 @@ ENDM
 	map_const METEOR_FALLS,                                16, 22 ;
 	map_const ROUTE_118,                                   40, 10 ;
 	map_const NEW_MAUVILLE,		                           22, 22 ;
+	map_const NEW_MAUVILLE_BASEMENT,                       20, 20 ;
+	map_const MAUVILLE_GAME_CORNER,                        10, 12 ;
 	map_const ROUTE_119_SOUTH,                             20, 40 ;
+	map_const ROUTE_119_FISHER_HOUSE,                      04, 04 ;
 	map_const ROUTE_119_NORTH,                             20, 40 ;
 	map_const ROUTE_120,                                   20, 40 ;
 	map_const ROUTE_121,                                   40, 12 ;
@@ -617,6 +620,9 @@ ENDM
 	map_const SOOTOPOLIS_FISHER_HOUSE,					   04, 04 ;
 	map_const EVERGRANDE_CITY,                             20, 40 ;
 	map_const EVERGRANDE_POKECENTER,					   07, 04 ;
+	map_const EVERGRANDE_DUNGEON,                          30, 30 ;
+	map_const EVERGRANDE_DUNGEON_B1F,                      30, 20 ;
+	map_const EVERGRANDE_DUNGEON_B2F,                      30, 20 ;
 	map_const HOENN_POKELEAGUE,                            07, 04 ;
 	map_const SIDNEYS_ROOM,                                07, 09 ;
 	map_const PHOEBES_ROOM,                                07, 09 ;
@@ -626,6 +632,7 @@ ENDM
 	map_const BATTLE_RESORT,                               30, 30 ;
 	map_const BATTLE_RESORT_POKECENTER,					   07, 04 ;
 	map_const BATTLE_RESORT_MART,						   06, 04 ;
+	map_const FANCY_ROCKS,                                 05, 03 ;
 	map_const TREETOP_TRIAL,                               20, 20 ;
 	map_const ASHEN_GAUNTLET,                              20, 20 ;
 	map_const WORLD_CUP_LOBBY,                             09, 10 ;
@@ -633,6 +640,12 @@ ENDM
 	map_const WC_QUALIFIER_1,                              07, 06 ;
 	map_const WC_QUALIFIER_2,                              07, 06 ;
 	map_const WC_QUALIFIER_3,                              07, 06 ;
+	map_const WC_CHALLENGER_LOBBY,                         20, 20 ;
+	map_const WC_ROUND_ONE,                                07, 09 ;
+	map_const WC_ROUND_TWO,                                07, 09 ;
+	map_const WC_ROUND_THREE,                              07, 09 ;
+	map_const WC_ROUND_FOUR,                               07, 12 ;
+	map_const WC_FINALS,                                   07, 07 ;
 	endgroup
 
 DEF NUM_MAP_GROUPS EQU const_value ; 27

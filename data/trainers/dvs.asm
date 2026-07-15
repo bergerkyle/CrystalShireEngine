@@ -88,4 +88,11 @@ TrainerClassDVs:
 	dn 11, 11, 11, 11 ; RANGERF
 	dn  2, 12, 12, 12 ; EXPLORER
 	dn  9,  8,  8,  8 ; PSYCHIC_F
+	dn 13, 12, 13, 13 ; AGATHA
+	dn 13, 12, 13, 13 ; LORELEI
+	dn 13, 12, 13, 13 ; FERGUS
+	dn 13, 12, 13, 13 ; NEESHA
+	dn 13, 12, 13, 13 ; LILY
+	dn 13, 12, 13, 13 ; GUY
+	dn 13, 12, 13, 13 ; GIOVANNI
 	assert_table_length NUM_TRAINER_CLASSES

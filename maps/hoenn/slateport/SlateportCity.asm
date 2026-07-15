@@ -41,6 +41,28 @@ SlateportShipyardSignText:
 	line "Shipyard"
 	done
 
+
+SlateportSailorScript:
+	jumptextfaceplayer SlateportSailorText
+
+SlateportSailorText:
+	text "Whew, I just"
+	line "sailed here from"
+	cont "Kanto."
+	done
+
+SlateportBugCatcherScript:
+	jumptextfaceplayer SlateportBugCatcherText
+
+SlateportBugCatcherText:
+	text "I'm actually from"
+	line "Pewter City."
+
+	para "I came to catch"
+	line "bugs you can only"
+	cont "find in Hoenn."
+	done
+
 SlateportCity_MapEvents:
 	db 0, 0 ; filler
 
@@ -54,8 +76,10 @@ SlateportCity_MapEvents:
 
 	def_bg_events	
 	bg_event 13, 21, BGEVENT_READ, SlateportCitySign
-	bg_event 28, 14, BGEVENT_READ, SlateportCityHarborSign
+	bg_event 27, 13, BGEVENT_READ, SlateportCityHarborSign
 	bg_event 23, 37, BGEVENT_READ, SlateportShipyardSign
 
 	def_object_events
+	object_event  25,  12, SPRITE_SAILOR, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, SlateportSailorScript, -1
+	object_event  20,  34, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, SlateportBugCatcherScript, -1
 	

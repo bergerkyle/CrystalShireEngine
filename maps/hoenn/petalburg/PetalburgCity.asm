@@ -33,6 +33,52 @@ PetalburgGymSignText:
 	line "Master"
 	done
 
+PetalburgFisherScript:
+	jumptextfaceplayer PetalburgFisherText
+
+PetalburgFisherText:
+	text "Yo, welcome to"
+	line "my little corner"
+	cont "of town."
+
+	para "Pull up some"
+	line "grass and enjoy"
+	cont "the fishing!"
+	done
+
+
+PetalburgGrannyScript:
+	jumptextfaceplayer PetalburgGrannyText
+
+PetalburgGrannyText:
+	text "Hi there sweetie."
+	line "Please don't step"
+	cont "on the flowers."
+	done
+
+PetalburgCooltrainerFScript:
+	jumptextfaceplayer PetalburgCooltrainerFText
+
+PetalburgCooltrainerFText:
+	text "I don't think"
+	line "I'm ready for"
+	cont "Petalburg Gym."
+
+	para "I think there's"
+	line "another gym in"
+	cont "Rustboro."
+
+	para "I heard it's a"
+	line "lot easier."
+	done
+
+PetalburgRareCandy:
+	itemball RARE_CANDY
+
+PetalburgPokeball:
+	itemball POKE_BALL
+
+
 PetalburgCity_MapEvents:
 	db 0, 0 ; filler
 
@@ -46,8 +92,12 @@ PetalburgCity_MapEvents:
 	def_coord_events
 
 	def_bg_events	
-	bg_event  15, 17, BGEVENT_READ, PetalburgCitySign
-	bg_event  13, 11, BGEVENT_READ, PetalburgGymSign
+	bg_event 13, 15, BGEVENT_READ, PetalburgCitySign
+	bg_event 15,  9, BGEVENT_READ, PetalburgGymSign
 
 	def_object_events
-	
+	object_event 19, 02, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, PetalburgFisherScript, -1
+	object_event 23, 23, SPRITE_GRANNY, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, PetalburgGrannyScript, -1
+	object_event 14, 13, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, PetalburgCooltrainerFScript, -1
+	object_event 06, 28, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, PetalburgRareCandy, EVENT_PETALBURG_CITY_RARE_CANDY
+	object_event 25, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, PetalburgPokeball, EVENT_PETALBURG_CITY_POKE_BALL

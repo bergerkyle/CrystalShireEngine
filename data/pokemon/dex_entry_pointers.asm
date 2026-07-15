@@ -476,7 +476,7 @@ PokedexDataPointerTable:
 	dba AkuaPokedexEntry
 	dba AkueriaPokedexEntry
 	dba HaneeiPokedexEntry
-	dba TsubomittPokedexEntry
+	dba Chikorita2PokedexEntry
 	dba KotoraPokedexEntry
 	dba RaitoraPokedexEntry
 	dba AshibombPokedexEntry
@@ -524,5 +524,10 @@ PokedexDataPointerTable:
 	dba LedianxPokedexEntry
 	dba MagcargoxPokedexEntry
 	dba JynxxPokedexEntry
+	dba SceptilexPokedexEntry
+	dba BlazikenxPokedexEntry
+	dba SwampertxPokedexEntry
+	dba GardevoirxPokedexEntry
+	dba PidgeotxPokedexEntry
 
 	assert_table_length NUM_POKEMON

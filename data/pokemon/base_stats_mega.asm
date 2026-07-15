@@ -2,8 +2,8 @@ SECTION "BaseData 5", ROMX
 
 BaseData5:
 ;megas
-INCLUDE "data/pokemon/base_stats/mega/raichux.asm"
-INCLUDE "data/pokemon/base_stats/mega/raichuy.asm"
+INCLUDE "data/pokemon/base_stats/alt/bayleef2.asm"
+INCLUDE "data/pokemon/base_stats/alt/meganium2.asm"
 INCLUDE "data/pokemon/base_stats/mega/dragonitex.asm"
 INCLUDE "data/pokemon/base_stats/mega/dragonitey.asm"
 INCLUDE "data/pokemon/base_stats/mega/venusaurx.asm"
@@ -41,6 +41,11 @@ INCLUDE "data/pokemon/base_stats/mega/butterfreex.asm"
 INCLUDE "data/pokemon/base_stats/mega/ledianx.asm"
 INCLUDE "data/pokemon/base_stats/mega/magcargox.asm"
 INCLUDE "data/pokemon/base_stats/mega/jynxx.asm"
+INCLUDE "data/pokemon/base_stats/mega/sceptilex.asm"
+INCLUDE "data/pokemon/base_stats/mega/blazikenx.asm"
+INCLUDE "data/pokemon/base_stats/mega/swampertx.asm"
+INCLUDE "data/pokemon/base_stats/mega/gardevoirx.asm"
+INCLUDE "data/pokemon/base_stats/mega/pidgeotx.asm"
 
 .IndirectEnd::
 

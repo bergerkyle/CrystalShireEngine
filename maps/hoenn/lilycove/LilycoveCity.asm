@@ -83,6 +83,37 @@ LilycoveHarborSignText:
 	text "Lilycove Voyages"
 	done
 
+LilycoveTwinScript:
+	jumptextfaceplayer LilycoveTwinText
+
+LilycoveTwinText:
+	text "Hi!"
+	done
+
+LilycoveSailorScript:
+	jumptextfaceplayer LilycoveSailorText
+
+LilycoveSailorText:
+	text "Lilycove is the"
+	line "end of the road"
+	cont "for Hoenn."
+
+	para "Literally! From"
+	line "here you Fly"
+	cont "or catch a Boat."
+	done
+
+LilycoveBeautyScript:
+	jumptextfaceplayer LilycoveBeautyText
+
+LilycoveBeautyText:
+	text "Hi, welcome to"
+	line "Lilycove!"
+
+	para "You should check"
+	line "out the Sea view."
+	done
+
 LilycoveCity_MapEvents:
 	db 0, 0 ; filler
 
@@ -97,13 +128,16 @@ LilycoveCity_MapEvents:
 	def_bg_events	
 	bg_event  29, 15, BGEVENT_READ, LilycoveSign
 	bg_event  53, 07, BGEVENT_READ, LilycoveCleaHouseSign
-	bg_event  37, 07, BGEVENT_READ, LilycoveDeptStoreSign
+	bg_event 42,  5, BGEVENT_READ, LilycoveDeptStoreSign
 	bg_event  11, 33, BGEVENT_READ, LilycoveHarborSign
 
 	def_object_events
 	object_event  46,  33, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, LilycoveMossdeepGuyScript, -1
 	object_event  46,  34, SPRITE_ESPEON, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_SCRIPT, 0, Lilycove_Espeon, -1
-	object_event  66,  08, SPRITE_WINGULL, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Lilycove_Wingull, -1
+	object_event  66,  04, SPRITE_WINGULL, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Lilycove_Wingull, -1
 	object_event  50,  31, SPRITE_WINGULL, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Lilycove_Wingull, -1
 	object_event  22,  32, SPRITE_WINGULL, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Lilycove_Wingull, -1
-	
+	object_event  39,  22, SPRITE_TWIN, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, LilycoveTwinScript, -1
+	object_event  42,  23, SPRITE_TWIN, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_ORANGE, OBJECTTYPE_SCRIPT, 0, LilycoveTwinScript, -1
+	object_event  31,  29, SPRITE_SAILOR, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, LilycoveSailorScript, -1
+	object_event  07,  18, SPRITE_BEAUTY, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, LilycoveBeautyScript, -1

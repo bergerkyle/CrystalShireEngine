@@ -1003,6 +1003,7 @@ SECTION "Map Blocks 4", ROMX
 	OldaleHouse1_Blocks:
 	OldaleHouse2_Blocks:
 	SootopolisFisherHouse_Blocks:
+	Route119FisherHouse_Blocks:
 	INCBIN "maps/hoenn/HoennHouse.ablk"
 
 	MrBrineyHouse_Blocks:
@@ -1118,6 +1119,12 @@ SECTION "Map Blocks 6", ROMX
 	NewMauville_Blocks:
 	INCBIN "maps/hoenn/mauville/NewMauville.ablk"
 
+	NewMauvilleBasement_Blocks:
+	INCBIN "maps/hoenn/mauville/NewMauvilleBasement.ablk"
+
+	MauvilleGameCorner_Blocks:
+	INCBIN "maps/hoenn/mauville/MauvilleGameCorner.ablk"
+
 	Route119South_Blocks:
 	INCBIN "maps/hoenn/Route119South.ablk" 
 
@@ -1166,6 +1173,15 @@ SECTION "Map Blocks 7", ROMX
 
 	EvergrandeCity_Blocks:
 	INCBIN "maps/hoenn/evergrande/EvergrandeCity.ablk"
+
+	EvergrandeDungeon_Blocks:
+	INCBIN "maps/hoenn/evergrande/EvergrandeDungeon.ablk"
+
+	EvergrandeDungeonB1F_Blocks:
+	INCBIN "maps/hoenn/evergrande/EvergrandeDungeonB1F.ablk"
+
+	EvergrandeDungeonB2F_Blocks:
+	INCBIN "maps/hoenn/evergrande/EvergrandeDungeonB2F.ablk"
 
 	HoennPokeleague_Blocks:
 	INCBIN "maps/hoenn/evergrande/HoennPokeleague.ablk"
@@ -1232,6 +1248,9 @@ SECTION "Map Blocks Battle Resort", ROMX
 	BattleResort_Blocks:
 	INCBIN "maps/hoenn/battle/BattleResort.ablk" 
 
+	FancyRocks_Blocks:
+	INCBIN "maps/hoenn/battle/FancyRocks.ablk" 
+
 	TreetopTrial_Blocks:
 	INCBIN "maps/hoenn/battle/TreetopTrial.ablk" 
 
@@ -1251,5 +1270,23 @@ SECTION "Map Blocks Battle Resort", ROMX
 	WCQualifier2_Blocks:
 	WCQualifier3_Blocks:
 	INCBIN "maps/hoenn/battle/WorldCupQualifierRoom.ablk" 
+
+	WCChallengerLobby_Blocks:
+	INCBIN "maps/hoenn/battle/WCChallengerLobby.ablk"
+
+	WCRoundOne_Blocks:
+	INCBIN "maps/hoenn/battle/WCRoundOne.ablk"
+
+	WCRoundTwo_Blocks:
+	INCBIN "maps/hoenn/battle/WCRoundTwo.ablk"
+
+	WCRoundThree_Blocks:
+	INCBIN "maps/hoenn/battle/WCRoundThree.ablk"
+
+	WCRoundFour_Blocks:
+	INCBIN "maps/hoenn/battle/WCRoundFour.ablk"
+
+	WCFinals_Blocks:
+	INCBIN "maps/hoenn/battle/WCFinals.ablk"
 
 ENDSECTION

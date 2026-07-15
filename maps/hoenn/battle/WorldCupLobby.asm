@@ -35,7 +35,9 @@ WorldCupQualifierRoomScript:
 	waitbutton
 	closetext
 	applymovement PLAYER, WCLobby_RoundOneMovement
-	warp WC_QUALIFIER_1, 06, 10
+	special FadeOutToWhite
+	waitsfx
+	warpfacing UP, WC_QUALIFIER_1, 06, 10
 	end
 
 .roundTwo
@@ -44,7 +46,9 @@ WorldCupQualifierRoomScript:
 	waitbutton
 	closetext
 	applymovement PLAYER, WCLobby_RoundTwoMovement
-	warp WC_QUALIFIER_2, 06, 10
+	special FadeOutToWhite
+	waitsfx
+	warpfacing UP, WC_QUALIFIER_2, 06, 10
 	end
 
 .roundThree
@@ -53,7 +57,9 @@ WorldCupQualifierRoomScript:
 	waitbutton
 	closetext
 	applymovement PLAYER, WCLobby_RoundThreeMovement
-	warp WC_QUALIFIER_3, 06, 10
+	special FadeOutToWhite
+	waitsfx
+	warpfacing UP, WC_QUALIFIER_3, 06, 10
 	end
 
 	
@@ -180,7 +186,7 @@ WorldCupLobbyRegistrationClerkScript:
 	end
 
 .notRegistered
-	checkevent EVENT_BEAT_ELITE_FOUR
+	checkevent EVENT_BEAT_INDIGO_LEAGUE
 	iffalse .notWorthy
 	setevent EVENT_WORLD_CUP_REGISTERED
 	opentext 
@@ -273,6 +279,8 @@ WorldCupLobby_MapEvents:
 	def_warp_events	
 	warp_event   08, 19, BATTLE_RESORT, 7
 	warp_event   09, 19, BATTLE_RESORT, 7
+	warp_event   00, 10, WC_CHALLENGER_LOBBY, 1
+	warp_event   00, 11, WC_CHALLENGER_LOBBY, 2
 
 	def_coord_events
 	coord_event  09,  08, -1, WorldCupQualifierRoomScript

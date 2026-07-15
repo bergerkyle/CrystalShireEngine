@@ -34,19 +34,42 @@ LavaridgeGymSignText:
 	cont "that burns."
 	done
 
+LavaridgeGrannyScript:
+	jumptextfaceplayer LavaridgeGrannyText
+
+LavaridgeGrannyText:
+	text "This hot spring"
+	line "feels great on"
+	cont "my old joints."
+	done
+
+LavaridgeAceScript:
+	jumptextfaceplayer LavaridgeAceText
+
+LavaridgeAceText:
+	text "Ugh, my team"
+	line "got smoked."
+
+	para "I thought Flannery"
+	line "would just fold"
+	cont "to a water type."
+	done
+
 LavaridgeTown_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events	
 	warp_event 11,  7, LAVARIDGE_POKECENTER, 2
 	warp_event 17,  7, LAVARIDGE_MART, 2
-	warp_event  8,  13, LAVARIDGE_GYM, 2
+	warp_event  6, 13, LAVARIDGE_GYM, 2
 
 	def_coord_events
 
 	def_bg_events	
-	bg_event  13, 09, BGEVENT_READ, LavaridgeTownSign
-	bg_event  07, 15, BGEVENT_READ, LavaridgeGymSign
+	bg_event 13, 11, BGEVENT_READ, LavaridgeTownSign
+	bg_event  7, 13, BGEVENT_READ, LavaridgeGymSign
 
 	def_object_events
+	object_event 07, 07, SPRITE_GRANNY, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, LavaridgeGrannyScript, -1
+	object_event 12, 14, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_SCRIPT, 0, LavaridgeAceScript, -1
 	

@@ -337,6 +337,12 @@ Route114FruitTree1:
 Route114FruitTree2:
 	fruittree FRUITTREE_ROUTE_114_2
 
+Route114RareCandy:
+	itemball RARE_CANDY
+
+Route114Stardust:
+	itemball STARDUST
+
 Route114_MapEvents:
 	db 0, 0 ; filler
 
@@ -347,8 +353,8 @@ Route114_MapEvents:
 	def_coord_events
 
 	def_bg_events	
-	bg_event  17, 37, BGEVENT_READ, Route114Sign
-	bg_event  25, 37, BGEVENT_READ, Route114LanettesHouseSign
+	bg_event 17, 36, BGEVENT_READ, Route114Sign
+	bg_event 25, 36, BGEVENT_READ, Route114LanettesHouseSign
 
 	def_object_events
 	object_event 10, 43, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GRAY, OBJECTTYPE_TRAINER, 3, Route114SteveScript, -1
@@ -364,4 +370,6 @@ Route114_MapEvents:
 	object_event 27, 50, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_TRAINER, 0, Route114ShaneScript, -1
 	object_event 32, 42, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route114FruitTree1, -1
 	object_event 33, 42, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route114FruitTree2, -1
+	object_event 33, 46, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route114RareCandy, EVENT_ROUTE_114_RARE_CANDY
+	object_event 10, 14, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route114Stardust, EVENT_ROUTE_114_STARDUST
 	

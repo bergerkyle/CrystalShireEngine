@@ -451,7 +451,7 @@ PokemonNames::
 	db "Furret@@@@"
 	db "Noctowl@@@"
 	db "Octillery@"
-	db "Yanma@@@@@"
+	db "Yanmega@@@"
 	db "Scyther@@@"
 	db "Scizor@@@@"
 	db "Tentacool@"
@@ -479,7 +479,7 @@ PokemonNames::
 	db "Akua@@@@@@"
 	db "Akueria@@@"
 	db "Haneei@@@@"
-	db "Tsubomitt@"
+	db "Chikorita@"
 	db "Kotora@@@@"
 	db "Raitora@@@"
 	db "Ashibomb@@"
@@ -488,8 +488,8 @@ PokemonNames::
 	db "Totartle@@"
 	db "Gorochu@@@"
 	;mega
-	db "Raichu@@@@"
-	db "Raichu@@@@"
+	db "Bayleef@@@" ;bayleef2
+	db "Meganium@@" ;Meganium2
 	db "Dragonite@"
 	db "Dragonite@"
 	db "Venusaur@@"
@@ -527,4 +527,9 @@ PokemonNames::
 	db "Ledian@@@@"
 	db "Magcargo@@"
 	db "Jynx@@@@@@"
+	db "Sceptile@@"
+	db "Blaziken@@"
+	db "Swampert@@"
+	db "Gardevoir@"
+	db "Pidgeot@@@"
 	assert_table_length NUM_POKEMON

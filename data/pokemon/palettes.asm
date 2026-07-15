@@ -979,8 +979,8 @@ INCBIN "gfx/pokemon/akueria/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/akueria/shiny.pal"
 INCBIN "gfx/pokemon/haneei/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/haneei/shiny.pal"
-INCBIN "gfx/pokemon/tsubomitt/normal.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/tsubomitt/shiny.pal"
+INCBIN "gfx/pokemon/chikorita2/normal.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/chikorita2/shiny.pal"
 INCBIN "gfx/pokemon/kotora/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/kotora/shiny.pal"
 INCBIN "gfx/pokemon/raitora/normal.gbcpal", middle_colors
@@ -996,10 +996,10 @@ INCLUDE "gfx/pokemon/totartle/shiny.pal"
 INCBIN "gfx/pokemon/gorochu/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/gorochu/shiny.pal"
 ;Megas
-INCBIN "gfx/pokemon/raichux/normal.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/raichux/shiny.pal"
-INCBIN "gfx/pokemon/raichuy/normal.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/raichuy/shiny.pal"
+INCBIN "gfx/pokemon/bayleef2/normal.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/bayleef2/shiny.pal"
+INCBIN "gfx/pokemon/meganium2/normal.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/meganium2/shiny.pal"
 INCBIN "gfx/pokemon/dragonitex/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/dragonitex/shiny.pal"
 INCBIN "gfx/pokemon/dragonitey/normal.gbcpal", middle_colors
@@ -1075,4 +1075,14 @@ INCBIN "gfx/pokemon/magcargox/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/magcargox/shiny.pal"
 INCBIN "gfx/pokemon/jynxx/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/jynxx/shiny.pal"
+INCBIN "gfx/pokemon/sceptilex/normal.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/sceptilex/shiny.pal"
+INCBIN "gfx/pokemon/blazikenx/normal.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/blazikenx/shiny.pal"
+INCBIN "gfx/pokemon/swampertx/normal.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/swampertx/shiny.pal"
+INCBIN "gfx/pokemon/gardevoirx/normal.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/gardevoirx/shiny.pal"
+INCBIN "gfx/pokemon/pidgeotx/normal.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/pidgeotx/shiny.pal"
 	assert_table_length NUM_POKEMON + 1

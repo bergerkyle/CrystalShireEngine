@@ -435,17 +435,18 @@ PidgeyEvosAttacks:
 	dbw 8, GUST
 	dbw 12, QUICK_ATTACK
 	dbw 16, WHIRLWIND
-	dbw 24, WING_ATTACK
+	dbw 24, AERIAL_ACE
 	dbw 28, SLAM
-	dbw 30, STEEL_WING	
+	dbw 30, STEEL_WING
 	dbw 36, MIRROR_MOVE
-	dbw 40, DRILL_PECK
+	dbw 40, RAZOR_WIND
 	dbw 45, EXTREMESPEED
-	dbw 50, BULK_UP	
-	dbw 55, DRAGON_CLAW
-	dbw 60, SKY_ATTACK	
-	dbw 65, DOUBLE_EDGE
-	dbw 70, HURRICANE
+	dbw 50, BULK_UP
+	dbw 55, DRAGONBREATH
+	dbw 60, HURRICANE
+	dbw 65, HYPER_VOICE
+	dbw 70, SKY_ATTACK
+	dbw 80, AEROBLAST
 	db 0 ; no more level-up moves
 
 PidgeottoEvosAttacks:
@@ -456,37 +457,40 @@ PidgeottoEvosAttacks:
 	dbw 8, GUST
 	dbw 12, QUICK_ATTACK
 	dbw 16, WHIRLWIND
-	dbw 24, WING_ATTACK
+	dbw 24, AERIAL_ACE
 	dbw 28, SLAM
-	dbw 30, STEEL_WING	
+	dbw 30, STEEL_WING
 	dbw 36, MIRROR_MOVE
-	dbw 40, DRILL_PECK
+	dbw 40, RAZOR_WIND
 	dbw 45, EXTREMESPEED
-	dbw 50, BULK_UP	
-	dbw 55, DRAGON_CLAW
-	dbw 60, SKY_ATTACK	
-	dbw 65, DOUBLE_EDGE
-	dbw 70, HURRICANE
+	dbw 50, BULK_UP
+	dbw 55, DRAGONBREATH
+	dbw 60, HURRICANE
+	dbw 65, HYPER_VOICE
+	dbw 70, SKY_ATTACK
+	dbw 80, AEROBLAST
 	db 0 ; no more level-up moves
 
 PidgeotEvosAttacks:
+	dbww EVOLVE_ITEM, KANTOITE_X, PIDGEOTX
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, SAND_ATTACK
 	dbw 8, GUST
 	dbw 12, QUICK_ATTACK
 	dbw 16, WHIRLWIND
-	dbw 24, WING_ATTACK
+	dbw 24, AERIAL_ACE
 	dbw 28, SLAM
-	dbw 30, STEEL_WING	
+	dbw 30, STEEL_WING
 	dbw 36, MIRROR_MOVE
-	dbw 40, DRILL_PECK
+	dbw 40, RAZOR_WIND
 	dbw 45, EXTREMESPEED
-	dbw 50, BULK_UP	
-	dbw 55, DRAGON_CLAW
-	dbw 60, SKY_ATTACK	
-	dbw 65, DOUBLE_EDGE
-	dbw 70, HURRICANE
+	dbw 50, BULK_UP
+	dbw 55, DRAGONBREATH
+	dbw 60, HURRICANE
+	dbw 65, HYPER_VOICE
+	dbw 70, SKY_ATTACK
+	dbw 80, AEROBLAST
 	db 0 ; no more level-up moves
 
 RattataEvosAttacks:
@@ -642,8 +646,8 @@ PikachuEvosAttacks:
 
 RaichuEvosAttacks:
 	dbww EVOLVE_ITEM, WATER_STONE, ARAICHU
-	dbww EVOLVE_ITEM, KANTOITE_X, RAICHUX
-	dbww EVOLVE_ITEM, KANTOITE_Y, RAICHUY
+	dbww EVOLVE_ITEM, DRAGON_FANG, GOROCHU
+	dbww EVOLVE_ITEM, DRAGON_SCALE, GOROCHU
 	db 0 ; no more evolutions
 	dbw 1, THUNDERSHOCK
 	dbw 1, GROWL
@@ -1315,7 +1319,7 @@ MankeyEvosAttacks:
 	dbw 5, SAND_ATTACK
 	dbw 8, LEER	
 	dbw 12, SHADOWSNEAK
-	dwb 16, ROAR
+	dbw 16, ROAR
 	dbw 20, FURY_SWIPES
 	dbw 24, DOUBLE_KICK
 	dbw 28, SHADOW_PUNCH
@@ -1337,7 +1341,7 @@ PrimeapeEvosAttacks:
 	dbw 5, SAND_ATTACK
 	dbw 8, LEER	
 	dbw 12, SHADOWSNEAK
-	dwb 16, ROAR
+	dbw 16, ROAR
 	dbw 20, FURY_SWIPES
 	dbw 24, DOUBLE_KICK
 	dbw 28, SHADOW_PUNCH
@@ -1614,7 +1618,7 @@ BellsproutEvosAttacks:
 	db 0 ; no more level-up moves
 
 WeepinbellEvosAttacks:
-	dbbw EVOLVE_LEVEL, 36, TSUBOMITT
+	dbbw EVOLVE_LEVEL, 36, VICTREEBEL
 	dbww EVOLVE_ITEM, LEAF_STONE, VICTREEBEL
 	db 0 ; no more evolutions
 	dbw 1, VINE_WHIP
@@ -1767,6 +1771,8 @@ GolemEvosAttacks:
 	db 0 ; no more level-up moves
 
 PonytaEvosAttacks:
+	dbww EVOLVE_ITEM, DAWN_STONE, GPONYTA
+	dbww EVOLVE_ITEM, THUNDERSTONE, PONYTA2
 	dbbw EVOLVE_LEVEL, 30, RAPIDASH
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
@@ -1787,6 +1793,8 @@ PonytaEvosAttacks:
 	db 0 ; no more level-up moves
 
 RapidashEvosAttacks:
+	dbww EVOLVE_ITEM, DAWN_STONE, GRAPIDASH
+	dbww EVOLVE_ITEM, THUNDERSTONE, RAPIDASH2
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 5, GROWL
@@ -2174,20 +2182,20 @@ DrowzeeEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, CONFUSION
 	dbw 1, HYPNOSIS
-	dbw 6, BITE
+	dbw 6, ASTONISH
 	dbw 10, DISABLE
 	dbw 16, SHARPEN
 	dbw 20, FURY_SWIPES
-	dbw 24, FAINT_ATTACK
-	dbw 28, PSYBEAM
-	dbw 32, DIZZY_PUNCH
+	dbw 24, PSYBEAM
+	dbw 28, SHADOW_PUNCH
+	dbw 32, NIGHTMARE
 	dbw 36, DREAM_EATER
-	dbw 40, DARK_PULSE
-	dbw 45, PSYCHIC_M
+	dbw 40, PSYCHIC_M
+	dbw 45, SHADOW_BALL
 	dbw 50, CALM_MIND
 	dbw 55, BODY_SLAM
 	dbw 60, PLAY_ROUGH
-	dbw 65, FUTURE_SIGHT
+	dbw 65, SHADOW_FORCE
 	dbw 70, SUBMISSION
 	db 0 ; no more level-up moves
 
@@ -2195,20 +2203,20 @@ HypnoEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, CONFUSION
 	dbw 1, HYPNOSIS
-	dbw 6, BITE
+	dbw 6, ASTONISH
 	dbw 10, DISABLE
 	dbw 16, SHARPEN
 	dbw 20, FURY_SWIPES
-	dbw 24, FAINT_ATTACK
-	dbw 28, PSYBEAM
-	dbw 32, DIZZY_PUNCH
+	dbw 24, PSYBEAM
+	dbw 28, SHADOW_PUNCH
+	dbw 32, NIGHTMARE
 	dbw 36, DREAM_EATER
-	dbw 40, DARK_PULSE
-	dbw 45, PSYCHIC_M
+	dbw 40, PSYCHIC_M
+	dbw 45, SHADOW_BALL
 	dbw 50, CALM_MIND
 	dbw 55, BODY_SLAM
 	dbw 60, PLAY_ROUGH
-	dbw 65, FUTURE_SIGHT
+	dbw 65, SHADOW_FORCE
 	dbw 70, SUBMISSION
 	db 0 ; no more level-up moves
 
@@ -2955,7 +2963,7 @@ VaporeonEvosAttacks:
 	dbw 28, AURORA_BEAM	
 	dbw 32, BATON_PASS
 	dbw 36, ACID_ARMOR
-	dbw 40, SCALD
+	dbw 40, MIST_BALL
 	dbw 45, ICE_BEAM
 	dbw 50, AMNESIA
 	dbw 55, RECOVER

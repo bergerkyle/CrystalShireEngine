@@ -38,153 +38,22 @@ TrainerLassDana1:
 	trainer LASS, DANA1, EVENT_BEAT_LASS_DANA, LassDana1SeenText, LassDana1BeatenText, 0, .Script
 
 .Script
-	loadvar VAR_CALLERID, PHONE_LASS_DANA
 	endifjustbattled
 	opentext
-	checkflag ENGINE_DANA_READY_FOR_REMATCH
-	iftrue .DanaRematch
-	checkflag ENGINE_DANA_HAS_THUNDERSTONE
-	iftrue .TryGiveThunderstone
-	checkcellnum PHONE_LASS_DANA
-	iftrue .NumberAccepted
-	checkevent EVENT_DANA_ASKED_FOR_PHONE_NUMBER
-	iftrue .SecondTimeAsking
 	writetext LassDanaMoomooMilkText
-	promptbutton
-	setevent EVENT_DANA_ASKED_FOR_PHONE_NUMBER
-	scall .AskNumber1F
-	sjump .AskForPhoneNumber
-
-.SecondTimeAsking:
-	scall .AskNumber2F
-.AskForPhoneNumber:
-	askforphonenumber PHONE_LASS_DANA
-	ifequal PHONE_CONTACTS_FULL, .PhoneFull
-	ifequal PHONE_CONTACT_REFUSED, .DeclinedPhoneNumber
-	gettrainername STRING_BUFFER_3, LASS, DANA1
-	scall .RegisteredPhoneNumber
-	sjump .NumberAccepted
-
-.DanaRematch:
-	scall .Rematch
-	winlosstext LassDana1BeatenText, 0
-	loadtrainer LASS, DANA1
-	startbattle
-	reloadmapafterbattle
-	clearflag ENGINE_DANA_READY_FOR_REMATCH
-	end
-
-.TryGiveThunderstone:
-	scall .Gift
-	verbosegiveitem THUNDERSTONE
-	iffalse .NoRoomForThunderstone
-	clearflag ENGINE_DANA_HAS_THUNDERSTONE
-	setevent EVENT_DANA_GAVE_THUNDERSTONE
-	sjump .NumberAccepted
-
-.NoRoomForThunderstone:
-	sjump .PackFull
-
-.AskNumber1F:
-	jumpstd AskNumber1FScript
-	end
-
-.AskNumber2F:
-	jumpstd AskNumber2FScript
-	end
-
-.RegisteredPhoneNumber:
-	jumpstd RegisteredNumberFScript
-	end
-
-.NumberAccepted:
-	jumpstd NumberAcceptedFScript
-	end
-
-.DeclinedPhoneNumber:
-	jumpstd NumberDeclinedFScript
-	end
-
-.PhoneFull:
-	jumpstd PhoneFullFScript
-	end
-
-.Rematch:
-	jumpstd RematchFScript
-	end
-
-.Gift:
-	jumpstd GiftFScript
-	end
-
-.PackFull:
-	jumpstd PackFullFScript
+	waitbutton
+	closetext
 	end
 
 TrainerSchoolboyChad1:
 	trainer SCHOOLBOY, CHAD1, EVENT_BEAT_SCHOOLBOY_CHAD, SchoolboyChad1SeenText, SchoolboyChad1BeatenText, 0, .Script
 
 .Script
-	loadvar VAR_CALLERID, PHONE_SCHOOLBOY_CHAD
 	endifjustbattled
 	opentext
-	checkflag ENGINE_CHAD_READY_FOR_REMATCH
-	iftrue .ChadRematch
-	checkcellnum PHONE_SCHOOLBOY_CHAD
-	iftrue .HaveChadsNumber
-	checkevent EVENT_CHAD_ASKED_FOR_PHONE_NUMBER
-	iftrue .SecondTimeAsking
 	writetext SchoolboyChadSoManyTestsText
-	promptbutton
-	setevent EVENT_CHAD_ASKED_FOR_PHONE_NUMBER
-	scall .AskPhoneNumber1
-	sjump .AskToRegisterNumber
-
-.SecondTimeAsking:
-	scall .AskPhoneNumber2
-.AskToRegisterNumber:
-	askforphonenumber PHONE_SCHOOLBOY_CHAD
-	ifequal PHONE_CONTACTS_FULL, .PhoneFull
-	ifequal PHONE_CONTACT_REFUSED, .SaidNo
-	gettrainername STRING_BUFFER_3, SCHOOLBOY, CHAD1
-	scall .RegisteredChad
-	sjump .HaveChadsNumber
-
-.ChadRematch:
-	scall .Rematch
-	winlosstext SchoolboyChad1BeatenText, 0
-	loadtrainer SCHOOLBOY, CHAD1
-	startbattle
-	reloadmapafterbattle
-	clearflag ENGINE_CHAD_READY_FOR_REMATCH
-	end
-
-.AskPhoneNumber1:
-	jumpstd AskNumber1MScript
-	end
-
-.AskPhoneNumber2:
-	jumpstd AskNumber2MScript
-	end
-
-.RegisteredChad:
-	jumpstd RegisteredNumberMScript
-	end
-
-.HaveChadsNumber:
-	jumpstd NumberAcceptedMScript
-	end
-
-.SaidNo:
-	jumpstd NumberDeclinedMScript
-	end
-
-.PhoneFull:
-	jumpstd PhoneFullMScript
-	end
-
-.Rematch:
-	jumpstd RematchMScript
+	waitbutton
+	closetext
 	end
 
 TrainerBeautyValerie:

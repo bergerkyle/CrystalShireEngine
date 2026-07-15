@@ -474,7 +474,7 @@ AnimationIdlePointers:
 	dw AkuaAnimationIdle
 	dw AkueriaAnimationIdle
 	dw HaneeiAnimationIdle
-	dw TsubomittAnimationIdle
+	dw Chikorita2AnimationIdle
 	dw KotoraAnimationIdle
 	dw RaitoraAnimationIdle
 	dw AshibombAnimationIdle
@@ -483,8 +483,8 @@ AnimationIdlePointers:
 	dw TotartleAnimationIdle
 	dw GorochuAnimationIdle
 	;mega
-	dw RaichuxAnimationIdle
-	dw RaichuyAnimationIdle
+	dw Bayleef2AnimationIdle
+	dw Meganium2AnimationIdle
 	dw DragonitexAnimationIdle
 	dw DragoniteyAnimationIdle
 	dw VenusaurxAnimationIdle
@@ -522,4 +522,9 @@ AnimationIdlePointers:
 	dw LedianxAnimationIdle
 	dw MagcargoxAnimationIdle
 	dw JynxxAnimationIdle
+	dw SceptilexAnimationIdle
+	dw BlazikenxAnimationIdle
+	dw SwampertxAnimationIdle
+	dw GardevoirxAnimationIdle
+	dw PidgeotxAnimationIdle
 	assert_table_length NUM_POKEMON

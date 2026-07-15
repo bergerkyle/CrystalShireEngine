@@ -474,7 +474,7 @@ BitmasksPointers:
 	dw AkuaBitmasks
 	dw AkueriaBitmasks
 	dw HaneeiBitmasks
-	dw TsubomittBitmasks
+	dw Chikorita2Bitmasks
 	dw KotoraBitmasks
 	dw RaitoraBitmasks
 	dw AshibombBitmasks
@@ -483,8 +483,8 @@ BitmasksPointers:
 	dw TotartleBitmasks
 	dw GorochuBitmasks
 	;mega
-	dw RaichuxBitmasks
-	dw RaichuyBitmasks
+	dw Bayleef2Bitmasks
+	dw Meganium2Bitmasks
 	dw DragonitexBitmasks
 	dw DragoniteyBitmasks
 	dw VenusaurxBitmasks
@@ -522,4 +522,9 @@ BitmasksPointers:
 	dw LedianxBitmasks
 	dw MagcargoxBitmasks
 	dw JynxxBitmasks
+	dw SceptilexBitmasks
+	dw BlazikenxBitmasks
+	dw SwampertxBitmasks
+	dw GardevoirxBitmasks
+	dw PidgeotxBitmasks
 	assert_table_length NUM_POKEMON
